@@ -35,6 +35,15 @@ namespace FitnessAplikacijaHCI.Controllers
             return View();
         }
 
+        public IActionResult CalculatorPage()
+        {
+            return View();
+        }
+
+        public IActionResult SchedulePage()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

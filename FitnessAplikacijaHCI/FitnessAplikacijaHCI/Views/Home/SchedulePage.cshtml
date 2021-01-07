@@ -1,0 +1,448 @@
+﻿
+@{
+	ViewData["Title"] = "SchedulePage";
+}
+
+<h3 style="text-align:center;margin-top:80px;color:darkred">CLASS TIMETABLE</h3>
+
+
+<section class='calendar' style="width:390px">
+	<h1>Januar 2020</h1>
+	<form action='#'>
+		<label class='weekday'>Mo</label>
+		<label class='weekday'>Tu</label>
+		<label class='weekday'>We</label>
+		<label class='weekday'>Th</label>
+		<label class='weekday'>Fr</label>
+		<label class='weekday'>Sa</label>
+		<label class='weekday'>Su</label>
+		<label class='day invalid' data-day='0'>
+			<input class='appointment' date-day='-4' placeholder='What would you like to do?' required='true' type='text'>
+			<span>-4</span>
+			<em></em>
+		</label>
+		<label class='day invalid' data-day='1'>
+			<input class='appointment' date-day='-3' placeholder='What would you like to do?' required='true' type='text'>
+			<span>-3</span>
+			<em></em>
+		</label>
+		<label class='day invalid' data-day='2'>
+			<input class='appointment' date-day='-2' placeholder='What would you like to do?' required='true' type='text'>
+			<span>-2</span>
+			<em></em>
+		</label>
+		<label class='day invalid' data-day='3'>
+			<input class='appointment' date-day='-1' placeholder='What would you like to do?' required='true' type='text'>
+			<span>-1</span>
+			<em></em>
+		</label>
+		<label class='day invalid' data-day='4'>
+			<input class='appointment' date-day='0' placeholder='What would you like to do?' required='true' type='text'>
+			<span>0</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='5'>
+			<input class='appointment' date-day='1' placeholder='What would you like to do?' required='true' type='text'>
+			<span>1</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='6'>
+			<input class='appointment' date-day='2' placeholder='What would you like to do?' required='true' type='text'>
+			<span>2</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='7'>
+			<input class='appointment' date-day='3' placeholder='What would you like to do?' required='true' type='text'>
+			<span>3</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='8'>
+			<input class='appointment' date-day='4' placeholder='What would you like to do?' required='true' type='text'>
+			<span>4</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='9'>
+			<input class='appointment' date-day='5' placeholder='What would you like to do?' required='true' type='text'>
+			<span>5</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='10'>
+			<input class='appointment' date-day='6' placeholder='What would you like to do?' required='true' type='text'>
+			<span>6</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='11'>
+			<input class='appointment' date-day='7' placeholder='What would you like to do?' required='true' type='text'>
+			<span>7</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='12'>
+			<input class='appointment' date-day='8' placeholder='What would you like to do?' required='true' type='text'>
+			<span>8</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='13'>
+			<input class='appointment' date-day='9' placeholder='What would you like to do?' required='true' type='text'>
+			<span>9</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='14'>
+			<input class='appointment' date-day='10' placeholder='What would you like to do?' required='true' type='text'>
+			<span>10</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='15'>
+			<input class='appointment' date-day='11' placeholder='What would you like to do?' required='true' type='text'>
+			<span>11</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='16'>
+			<input class='appointment' date-day='12' placeholder='What would you like to do?' required='true' type='text'>
+			<span>12</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='17'>
+			<input class='appointment' date-day='13' placeholder='What would you like to do?' required='true' type='text'>
+			<span>13</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='18'>
+			<input class='appointment' date-day='14' placeholder='What would you like to do?' required='true' type='text'>
+			<span>14</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='19'>
+			<input class='appointment' date-day='15' placeholder='What would you like to do?' required='true' type='text'>
+			<span>15</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='20'>
+			<input class='appointment' date-day='16' placeholder='What would you like to do?' required='true' type='text'>
+			<span>16</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='21'>
+			<input class='appointment' date-day='17' placeholder='What would you like to do?' required='true' type='text'>
+			<span>17</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='22'>
+			<input class='appointment' date-day='18' placeholder='What would you like to do?' required='true' type='text'>
+			<span>18</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='23'>
+			<input class='appointment' date-day='19' placeholder='What would you like to do?' required='true' type='text'>
+			<span>19</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='24'>
+			<input class='appointment' date-day='20' placeholder='What would you like to do?' required='true' type='text'>
+			<span>20</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='25'>
+			<input class='appointment' date-day='21' placeholder='What would you like to do?' required='true' type='text'>
+			<span>21</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='26'>
+			<input class='appointment' date-day='22' placeholder='What would you like to do?' required='true' type='text'>
+			<span>22</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='27'>
+			<input class='appointment' date-day='23' placeholder='What would you like to do?' required='true' type='text'>
+			<span>23</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='28'>
+			<input class='appointment' date-day='24' placeholder='What would you like to do?' required='true' type='text'>
+			<span>24</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='29'>
+			<input class='appointment' date-day='25' placeholder='What would you like to do?' required='true' type='text'>
+			<span>25</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='30'>
+			<input class='appointment' date-day='26' placeholder='What would you like to do?' required='true' type='text'>
+			<span>26</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='31'>
+			<input class='appointment' date-day='27' placeholder='What would you like to do?' required='true' type='text'>
+			<span>27</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='32'>
+			<input class='appointment' date-day='28' placeholder='What would you like to do?' required='true' type='text'>
+			<span>28</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='33'>
+			<input class='appointment' date-day='29' placeholder='What would you like to do?' required='true' type='text'>
+			<span>29</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='34'>
+			<input class='appointment' date-day='30' placeholder='What would you like to do?' required='true' type='text'>
+			<span>30</span>
+			<em></em>
+		</label>
+		<label class='day' data-day='35'>
+			<input class='appointment' date-day='31' placeholder='What would you like to do?' required='true' type='text'>
+			<span>31</span>
+			<em></em>
+		</label>
+		<div class='clearfix'></div>
+	</form>
+</section>
+
+
+<div class="w3-container">
+	<div class="danger">
+		<p style="font-weight:bold">
+			"Once you stop learning you start dying!."
+		</p>
+		<p>
+			~Albert Einstein
+		</p>
+	</div>
+</div>
+
+<div class="w3-container2">
+	<div class="info">
+		<p style="font-weight:bold">
+			"Ever tried. Ever failed. No
+			Matter. Try again. Fail again.
+			Fail better."
+		</p>
+		<p>
+			~Samuel Beckett
+		</p>
+	</div>
+</div>
+
+<div class="w3-container3">
+	<div class="success">
+		<p style="font-weight:bold">
+			"Don't limit your challenges,
+			challenge your limits!"
+		</p>
+		<p>
+			~Jerry Dunn
+		</p>
+	</div>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+
+<script>
+	window.onload = function () {
+		$('footer').hide();
+	}
+</script>
+
+
+<style>
+	.success {
+		background-color: #ddffdd;
+		border-left: 6px solid #4CAF50;
+	}
+
+	.w3-container3 {
+		width: 395px;
+		transform: rotate(-20deg);
+		margin-left: 770px;
+		margin-top: -180px;
+	}
+
+	.w3-container2 {
+		width: 300px;
+		margin-left: 400px;
+	}
+
+	.w3-container {
+		width: 330px;
+		transform: rotate(20deg);
+		margin-top: 460px;
+		margin-left: 20px;
+	}
+
+	.info {
+		background-color: #e7f3fe;
+		border-left: 6px solid #2196F3;
+	}
+
+	.danger {
+		background-color: #ffdddd;
+		border-left: 6px solid #f44336;
+	}
+
+	html {
+		position: relative;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+	}
+
+	body {
+		background-color: #e6dc83;
+	}
+
+	section.calendar {
+		background-color: #29323f;
+		font-family: "Dosis", sans-serif;
+		color: #fff;
+		width: 290px;
+		padding: 45px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translateY(-50%) translateX(-50%);
+		box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.6);
+		border-radius: 5px;
+	}
+
+		section.calendar h1 {
+			text-align: center;
+			color: #fcee6d;
+			margin: 0 0 30px 0;
+		}
+
+		section.calendar form {
+			position: relative;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			align-content: flex-start;
+		}
+
+			section.calendar form label.weekday {
+				display: inline-block;
+				width: 25px;
+				margin: 8px;
+				text-align: center;
+				color: #999;
+			}
+
+			section.calendar form form {
+				margin: 0;
+				padding: 0;
+			}
+
+			section.calendar form label.day {
+				display: inline-block;
+				width: 25px;
+				margin: 8px;
+			}
+
+				section.calendar form label.day span {
+					display: inline-block;
+					width: 25px;
+					height: 25px;
+					line-height: 25px;
+					margin: -2px 0 0 -2px;
+					border-radius: 50%;
+					border: 2px solid #29323f;
+					text-align: center;
+					transition: all 0.2s linear;
+					cursor: pointer;
+				}
+
+					section.calendar form label.day span:hover {
+						border-color: #e7d84f;
+					}
+
+				section.calendar form label.day em {
+					display: inline-block;
+					position: absolute;
+					border-radius: 50%;
+					border-color: #29323f;
+					width: 3px;
+					height: 3px;
+					background-color: #685e02;
+					margin-left: 11px;
+					margin-top: 2px;
+					opacity: 0;
+					transition: all 0.2s linear;
+				}
+
+				section.calendar form label.day input[type=text] {
+					border: 0;
+					opacity: 0;
+					position: absolute;
+					margin-top: 40px;
+					left: -45px;
+					width: 380px;
+					height: 1px;
+					padding: 0;
+					outline: none;
+					font-size: 16px;
+					transition: height 0.2s linear, opacity 0.2s linear, color 0.02s linear;
+					color: #fff;
+				}
+
+					section.calendar form label.day input[type=text]:focus {
+						opacity: 1;
+						height: 35px;
+						padding: 10px 40px;
+						left: -45px;
+						width: 300px;
+						color: #29323f;
+					}
+
+						section.calendar form label.day input[type=text]:focus + span {
+							color: #fcee6d;
+							border-color: #fcee6d;
+							background: #fcee6d;
+							color: #29323f;
+							font-weight: bold;
+							margin-bottom: 65px;
+						}
+
+						section.calendar form label.day input[type=text]:focus ~ em {
+							border-radius: 0;
+							border: 5px solid transparent;
+							background: transparent;
+							border-bottom-color: white;
+							margin-top: -62px;
+							margin-left: 7px;
+							width: 0;
+							height: 0;
+							display: inline-block;
+							opacity: 1;
+						}
+
+					section.calendar form label.day input[type=text]:valid ~ em {
+						display: inline-block;
+						opacity: 1;
+					}
+
+				section.calendar form label.day.invalid {
+					opacity: 0;
+					width: 25px;
+					height: 25px;
+				}
+
+					section.calendar form label.day.invalid span, section.calendar form label.day.invalid input {
+						display: none;
+					}
+
+		section.calendar div.clearfix {
+			clear: both;
+		}
+
+		section.calendar div.hidden {
+			display: none;
+		}
+</style>
+

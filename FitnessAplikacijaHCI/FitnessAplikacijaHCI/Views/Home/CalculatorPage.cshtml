@@ -1,0 +1,64 @@
+﻿
+@{
+	ViewData["Title"] = "CalculatorPage";
+}
+<br />
+
+<h2 id="Title">Calculate your body mass index here</h2>
+
+<br />
+<br />
+<br />
+<br />
+
+<form style="width:30%;">
+	<h6>Input your weight(kilograms)</h6>
+	<input id="weight" type="number" class="form-control-sm" />
+	<br />
+	<br />
+	<h6>Input your height(centimeters)</h6>
+	<input id="height" type="number" class="form-control-sm" />
+	<br />
+	<input id="calculate" class="btn btn-outline" type="button" onclick="CalculateBMI(document.getElementById('height').value,document.getElementById('weight').value)" value="Calculate" />
+	<h6 style="margin-top:60px">Your BMI:</h6>
+	<input id="result" class="form-control-sm" />
+</form>
+
+<div style="margin-left:400px;margin-top:-300px">
+	<img src="https://www.cdc.gov/healthyweight/images/assessing/bmi-adult-fb-600x315.jpg" />
+</div>
+
+
+<style>
+	#result {
+		color: #d07ec2;
+	}
+
+	#Title {
+		margin-top: 20px;
+		color: #d07ec2;
+	}
+
+	#calculate {
+		margin-top: 10px;
+		margin-left: 85px;
+		border: 1px solid #d07ec2;
+		color: #d07ec2;
+		padding-left: -60px;
+	}
+
+	.form-control-sm {
+		border: 1px solid #d07ec2;
+	}
+</style>
+
+
+<script>
+	function CalculateBMI(h, w) {
+		debugger;
+		var height = h / 100;
+		var heightSquare = height * height;
+		var result = w / heightSquare;
+		document.getElementById("result").value = result;
+	}
+</script>
