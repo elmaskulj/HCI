@@ -22,6 +22,10 @@ namespace FitnessAplikacijaHCI.Controllers
         {
             return View();
         }
+        public IActionResult Recipes()
+        {
+            return View();
+        }
         public IActionResult Novii()
         {
             return View();

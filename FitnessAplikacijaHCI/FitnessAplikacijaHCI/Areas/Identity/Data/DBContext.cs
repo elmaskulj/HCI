@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using FitnessAplikacijaHCI.Entity;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +11,7 @@ namespace FitnessAplikacijaHCI.Data
 {
     public class DBContext : IdentityDbContext<IdentityUser>
     {
+        public DbSet<Recipes> Recipes { get; set; }
         public DBContext(DbContextOptions<DBContext> options)
             : base(options)
         {

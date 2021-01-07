@@ -29,7 +29,7 @@ namespace FitnessAplikacijaHCI
         {
             services.AddDbContext<DBContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
+                    Configuration.GetConnectionString("DBContextConnection")));
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<DBContext>();
             services.AddControllersWithViews();
